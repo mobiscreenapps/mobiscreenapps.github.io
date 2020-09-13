@@ -427,38 +427,46 @@
 <h3 id='getstream'>GetStream</h3><div class="highlight"><pre class="highlight csharp tab-csharp"><code><span class="n">IAudioStream</span> <span class="nf">GetStream</span><span class="p">(</span><span class="kt">string</span> <span class="n">id</span><span class="p">);</span>
 </code></pre></div>
 <blockquote>
-<p>Пример использования</p>
+<p>Пример использования
+<code>csharp
+var stream = group.GetStream(&quot;some_group&quot;);
+</code></p>
 </blockquote>
-<div class="highlight"><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">stream</span> <span class="p">=</span> <span class="k">group</span><span class="p">.</span><span class="nf">GetStream</span><span class="p">(</span><span class="s">"some_group"</span><span class="p">);</span>
-</code></pre></div>
+
 <p>Поиск ПЕРВОГО вложенного потока по определённому ID. Если такого нет - возвращает <code>null</code>.</p>
 <h3 id='getstreambyclip'>GetStreamByClip</h3><div class="highlight"><pre class="highlight csharp tab-csharp"><code><span class="n">IAudioStream</span> <span class="nf">GetStreamByClip</span><span class="p">(</span><span class="n">AudioClip</span> <span class="n">clip</span><span class="p">);</span>
 <span class="n">IAudioStream</span> <span class="nf">GetStreamByClip</span><span class="p">(</span><span class="kt">string</span> <span class="n">clipName</span><span class="p">);</span>
 </code></pre></div>
 <blockquote>
-<p>Пример использования</p>
+<p>Пример использования
+<code>csharp
+var streamByClip = group.GetStreamByClip(audioClip);
+var streamByClipName = group.GetStreamByClip(audioClip.name);
+</code></p>
 </blockquote>
-<div class="highlight"><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">streamByClip</span> <span class="p">=</span> <span class="k">group</span><span class="p">.</span><span class="nf">GetStreamByClip</span><span class="p">(</span><span class="n">audioClip</span><span class="p">);</span>
-<span class="kt">var</span> <span class="n">streamByClipName</span> <span class="p">=</span> <span class="k">group</span><span class="p">.</span><span class="nf">GetStreamByClip</span><span class="p">(</span><span class="n">audioClip</span><span class="p">.</span><span class="n">name</span><span class="p">);</span>
-</code></pre></div>
+
 <p>Поиск ПЕРВОГО вложенного потока по определённому аудио-клипу (или его названию). Если такого нет - возвращает <code>null</code>.</p>
 <h3 id='getstreams'>GetStreams</h3><div class="highlight"><pre class="highlight csharp tab-csharp"><code><span class="n">IAudioStream</span><span class="p">[]</span> <span class="nf">GetStreams</span><span class="p">(</span><span class="kt">string</span> <span class="n">id</span><span class="p">);</span>
 </code></pre></div>
 <blockquote>
-<p>Пример использования</p>
+<p>Пример использования
+<code>csharp
+var streams = group.GetStreams(&quot;some_group&quot;);
+</code></p>
 </blockquote>
-<div class="highlight"><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">streams</span> <span class="p">=</span> <span class="k">group</span><span class="p">.</span><span class="nf">GetStreams</span><span class="p">(</span><span class="s">"some_group"</span><span class="p">);</span>
-</code></pre></div>
+
 <p>Поиск всех вложенных потоков по определённому ID. В случае если их нет - возвращает пустой массив.</p>
 <h3 id='getstreamsbyclip'>GetStreamsByClip</h3><div class="highlight"><pre class="highlight csharp tab-csharp"><code><span class="n">IAudioStream</span><span class="p">[]</span> <span class="nf">GetStreamsByClip</span><span class="p">(</span><span class="n">AudioClip</span> <span class="n">clip</span><span class="p">);</span>
 <span class="n">IAudioStream</span><span class="p">[]</span> <span class="nf">GetStreamsByClip</span><span class="p">(</span><span class="kt">string</span> <span class="n">clipName</span><span class="p">);</span>
 </code></pre></div>
 <blockquote>
-<p>Пример использования</p>
+<p>Пример использования
+<code>csharp
+var streamsByClip = group.GetStreamsByClip(audioClip);
+var streamsByClipName = group.GetStreamsByClip(audioClip.name);
+</code></p>
 </blockquote>
-<div class="highlight"><pre class="highlight csharp tab-csharp"><code><span class="kt">var</span> <span class="n">streamsByClip</span> <span class="p">=</span> <span class="k">group</span><span class="p">.</span><span class="nf">GetStreamsByClip</span><span class="p">(</span><span class="n">audioClip</span><span class="p">);</span>
-<span class="kt">var</span> <span class="n">streamsByClipName</span> <span class="p">=</span> <span class="k">group</span><span class="p">.</span><span class="nf">GetStreamsByClip</span><span class="p">(</span><span class="n">audioClip</span><span class="p">.</span><span class="n">name</span><span class="p">);</span>
-</code></pre></div>
+
 <p>Поиск всех вложенных потоков по определённому аудио-клипу (или его названию). В случае если их нет - возвращает пустой массив.</p>
 <h2 id='iaudiostream'>IAudioStream</h2>
 <p>Класс для управления аудио-потоком.</p>
