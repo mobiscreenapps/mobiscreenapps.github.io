@@ -398,7 +398,7 @@ html, body {
   }
   
   h3 {
-    @extend %header-font;
+    //@extend %header-font;
     font-size: 16px;
     margin-top: 0.5em;
     margin-bottom: 0;
@@ -408,7 +408,7 @@ html, body {
   }
 
   h4 {
-    @extend %header-font;
+    //@extend %header-font;
     font-size: 13px;
     margin-top: 0.5em;
     margin-bottom: 0;
