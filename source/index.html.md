@@ -32,17 +32,15 @@ code_clipboard: true
 
 ### ID
 
-Уникальное название для группы. По умолчанию `null`.
-
-<aside class="notice"><code>ID</code> групп не должны и не могут повторяться.</aside>
-
 ```csharp
 string ID { get; }
 ```
 
-### GetStream
+Уникальное название для группы. По умолчанию `null`.
 
-Поиск ПЕРВОГО вложенного потока по определённому ID. Если такого нет - возвращает `null`.
+<aside class="notice"><code>ID</code> групп не должны и не могут повторяться.</aside>
+
+### GetStream
 
 ```csharp
 IAudioStream GetStream(string id);
@@ -54,9 +52,9 @@ IAudioStream GetStream(string id);
 var stream = group.GetStream("some_group");
 ```
 
-### GetStreamByClip
+Поиск ПЕРВОГО вложенного потока по определённому ID. Если такого нет - возвращает `null`.
 
-Поиск ПЕРВОГО вложенного потока по определённому аудио-клипу (или его названию). Если такого нет - возвращает `null`.
+### GetStreamByClip
 
 ```csharp
 IAudioStream GetStreamByClip(AudioClip clip);
@@ -70,9 +68,9 @@ var streamByClip = group.GetStreamByClip(audioClip);
 var streamByClipName = group.GetStreamByClip(audioClip.name);
 ```
 
-### GetStreams
+Поиск ПЕРВОГО вложенного потока по определённому аудио-клипу (или его названию). Если такого нет - возвращает `null`.
 
-Поиск всех вложенных потоков по определённому ID. В случае если их нет - возвращает пустой массив.
+### GetStreams
 
 ```csharp
 IAudioStream[] GetStreams(string id);
@@ -84,9 +82,9 @@ IAudioStream[] GetStreams(string id);
 var streams = group.GetStreams("some_group");
 ```
 
-### GetStreamsByClip
+Поиск всех вложенных потоков по определённому ID. В случае если их нет - возвращает пустой массив.
 
-Поиск всех вложенных потоков по определённому аудио-клипу (или его названию). В случае если их нет - возвращает пустой массив.
+### GetStreamsByClip
 
 ```csharp
 IAudioStream[] GetStreamsByClip(AudioClip clip);
@@ -100,25 +98,27 @@ var streamsByClip = group.GetStreamsByClip(audioClip);
 var streamsByClipName = group.GetStreamsByClip(audioClip.name);
 ```
 
+Поиск всех вложенных потоков по определённому аудио-клипу (или его названию). В случае если их нет - возвращает пустой массив.
+
 ## IAudioStream
 
 Класс для управления аудио-потоком.
 
 ### ID
 
-Определённое имя потока. Не уникально и может повторяться.
-
 ```csharp
 string ID { get; }
 ```
 
-### Loop
+Определённое имя потока. Не уникально и может повторяться.
 
-Зацикленность звука.
+### Loop
 
 ```csharp
 bool Loop { get; }
 ```
+
+Зацикленность звука.
 
 ### Clip
 
