@@ -31,7 +31,6 @@ code_clipboard: true
 Контейнер для потоков звуков. Выполняет роль медиатора для управления паузой/громкостью/мутом, а так же - позволяет найти конкретные вложенные потоки.
 
 ### ID
-
 ```csharp
 string ID { get; }
 ```
@@ -41,13 +40,10 @@ string ID { get; }
 <aside class="notice"><code>ID</code> групп не должны и не могут повторяться.</aside>
 
 ### GetStream
-
 ```csharp
 IAudioStream GetStream(string id);
 ```
-
 > Пример использования
-
 ```csharp
 var stream = group.GetStream("some_group");
 ```
@@ -55,14 +51,11 @@ var stream = group.GetStream("some_group");
 Поиск ПЕРВОГО вложенного потока по определённому ID. Если такого нет - возвращает `null`.
 
 ### GetStreamByClip
-
 ```csharp
 IAudioStream GetStreamByClip(AudioClip clip);
 IAudioStream GetStreamByClip(string clipName);
 ```
-
 > Пример использования
-
 ```csharp
 var streamByClip = group.GetStreamByClip(audioClip);
 var streamByClipName = group.GetStreamByClip(audioClip.name);
@@ -71,13 +64,10 @@ var streamByClipName = group.GetStreamByClip(audioClip.name);
 Поиск ПЕРВОГО вложенного потока по определённому аудио-клипу (или его названию). Если такого нет - возвращает `null`.
 
 ### GetStreams
-
 ```csharp
 IAudioStream[] GetStreams(string id);
 ```
-
 > Пример использования
-
 ```csharp
 var streams = group.GetStreams("some_group");
 ```
@@ -85,14 +75,11 @@ var streams = group.GetStreams("some_group");
 Поиск всех вложенных потоков по определённому ID. В случае если их нет - возвращает пустой массив.
 
 ### GetStreamsByClip
-
 ```csharp
 IAudioStream[] GetStreamsByClip(AudioClip clip);
 IAudioStream[] GetStreamsByClip(string clipName);
 ```
-
 > Пример использования
-
 ```csharp
 var streamsByClip = group.GetStreamsByClip(audioClip);
 var streamsByClipName = group.GetStreamsByClip(audioClip.name);
@@ -105,7 +92,6 @@ var streamsByClipName = group.GetStreamsByClip(audioClip.name);
 Класс для управления аудио-потоком.
 
 ### ID
-
 ```csharp
 string ID { get; }
 ```
@@ -113,7 +99,6 @@ string ID { get; }
 Определённое имя потока. Не уникально и может повторяться.
 
 ### Loop
-
 ```csharp
 bool Loop { get; }
 ```
