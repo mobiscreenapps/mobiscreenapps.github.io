@@ -1,241 +1,223 @@
 ---
-title: API Reference
+title: App Core API Reference
 
-language_tabs: # must be one of https://git.io/vQNgJ
+language_tabs:
   - csharp
-  # - ruby
-  # - python
-  # - javascript
 
 toc_footers:
   # - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
+  #- <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
 
 includes:
-  - errors
+  - audioContainerExtensions
 
 search: true
 
 code_clipboard: true
 ---
 
-# Introduction
+# Введение
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Документация к [AppCore](https://gitlab.com/msa-developers/appcore). Здесь собрано описание основного функционала инструментария.
+
+<!-- Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
 
 We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
-This example API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to edit it and use it as a base for your own API's documentation.
+This example API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to edit it and use it as a base for your own API's documentation. -->
 
-# Authentication
+# Audio
 
-> To authorize, use this code:
+## AudioController
 
-```ruby
-require 'kittn'
+<aside class="warning"> Obsolete class. Use `AudioStream` instead.</aside>
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+## IAudioGroup
+
+Контейнер для потоков звуков. Выполняет роль медиатора для управления паузой/громкостью/мутом, а так же - позволяет найти конкретные вложенные потоки.
+
+### ID
+
+`string ID { get; }`
+Уникальное название для группы. По умолчанию `null`.
+
+```csharp
+var group = AudioGroupManager.Instance.GetGroup("some_group");
+Debug.Log(group.ID); //Выведет название группы.
 ```
 
-```python
-import kittn
+### GetStream
 
-api = kittn.authorize('meowmeowmeow')
-```
+### GetStreamByClip
 
-```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
-```
+### GetStreams
 
-```javascript
-const kittn = require('kittn');
+### GetStreamsByClip
 
-let api = kittn.authorize('meowmeowmeow');
-```
+### SetID
 
-> Make sure to replace `meowmeowmeow` with your API key.
+## IAudioStream
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+### ID
 
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
+### Loop
 
-`Authorization: meowmeowmeow`
+### Clip
 
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
+### Group
 
-# Kittens
+### OverrideGroupFlags
 
-## Get All Kittens
+### SetID
 
-```ruby
-require 'kittn'
+### SetOnComplete
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
-```
+### SetOverrideGroupFlags
 
-```python
-import kittn
+### Stop
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
-```
+## IAudioGroupManager
 
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
+### DefaultGroup
 
-```javascript
-const kittn = require('kittn');
+### MusicGroup
 
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
-```
+### GetGroup
 
-> The above command returns JSON structured like this:
+### GetStream
 
-```json
-[
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
-  },
-  {
-    "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
-]
-```
+### GetStreamByClip
 
-This endpoint retrieves all kittens.
+### GetStreamByClip
 
-### HTTP Request
+### GetStreams
 
-`GET http://example.com/api/kittens`
+### GetStreamsByClip
 
-### Query Parameters
+### GetStreamsByClip
 
-Parameter | Default | Description
---------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
+## IAudioSettingsLayer
 
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
+### Volume
 
-## Get a Specific Kitten
+### Mute
 
-```ruby
-require 'kittn'
+### Pause
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
-```
+## IAudioStream
 
-```python
-import kittn
+### ID
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
+### Loop
 
-```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
-```
+### Clip
 
-```javascript
-const kittn = require('kittn');
+### Group
 
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.get(2);
-```
+### OverrideGroupFlags
 
-> The above command returns JSON structured like this:
+### SetGroup
 
-```json
-{
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
-}
-```
+### SetID
 
-This endpoint retrieves a specific kitten.
+### SetClip
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+### SetLoop
 
-### HTTP Request
+### SetVolume
 
-`GET http://example.com/kittens/<ID>`
+### SetMute
 
-### URL Parameters
+### SetPause
 
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to retrieve
+### SetOnComplete
 
-## Delete a Specific Kitten
+### SetOverrideGroupFlags
 
-```ruby
-require 'kittn'
+### Stop
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.delete(2)
-```
+## IAudioStreamManager
 
-```python
-import kittn
+### GetStreamBuilder
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.delete(2)
-```
+## AudioStream.Builder
 
-```shell
-curl "http://example.com/api/kittens/2"
-  -X DELETE
-  -H "Authorization: meowmeowmeow"
-```
+### Builder
 
-```javascript
-const kittn = require('kittn');
+### SetGroup
 
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.delete(2);
-```
+### SetID
 
-> The above command returns JSON structured like this:
+### SetClip
 
-```json
-{
-  "id": 2,
-  "deleted" : ":("
-}
-```
+### SetLoop
 
-This endpoint deletes a specific kitten.
+### SetVolume
 
-### HTTP Request
+### SetMute
 
-`DELETE http://example.com/kittens/<ID>`
+### SetPause
 
-### URL Parameters
+### SetOnComplete
 
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to delete
+### SetOverrideGroupFlags
 
+### Dispose
+
+### Play
+
+### Stop
+
+## AudioStream
+
+### GetBuilder
+
+### Play
+
+### CreateFromSource
+
+## IAudioVolumeManager
+
+### OverrideSettingsFlag
+
+# Extensions
+
+## ColorHelpers
+
+## CyclicList
+
+## DictionaryExtensions
+
+## ListExtensions
+
+## MathExtensions
+
+## TransformExtensions
+
+## TweenExtensions
+
+## UnsortedExtensions
+
+# Generated
+
+# Helpers
+
+# IAP
+
+# Initialization
+
+# Input
+
+# Log
+
+# Pooling
+
+# Scene Managment
+
+# Storage
+
+# Taptic
+
+# Time
+
+# UI
