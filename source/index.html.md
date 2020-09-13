@@ -1,8 +1,8 @@
 ---
 title: App Core API Reference
 
-language_tabs:
-  - csharp
+#language_tabs:
+#  - csharp
 
 toc_footers:
   # - <a href='#'>Sign Up for a Developer Key</a>
@@ -24,7 +24,7 @@ code_clipboard: true
 
 ## AudioController
 
-<aside class="warning"> Obsolete class. Will be removed soon. Move all code to <code>AudioStream</code>'s instead.</aside>
+<aside class="warning"> Устарелый класс. В скором времени будет удалён. Используйте <code>AudioStream</code>'ы вместо него.</aside>
 
 ## IAudioGroup
 
