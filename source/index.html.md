@@ -20,17 +20,11 @@ code_clipboard: true
 
 Документация к [AppCore](https://gitlab.com/msa-developers/appcore). Здесь собрано описание основного функционала инструментария.
 
-<!-- Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
-
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
-
-This example API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to edit it and use it as a base for your own API's documentation. -->
-
 # Audio
 
 ## AudioController
 
-<aside class="warning"> Obsolete class. Use `AudioStream` instead.</aside>
+<aside class="warning"> Obsolete class. Will be removed soon. Move all code to <code>AudioStream</code>'s instead.</aside>
 
 ## IAudioGroup
 
@@ -38,29 +32,93 @@ This example API documentation page was created with [Slate](https://github.com/
 
 ### ID
 
-`string ID { get; }`
 Уникальное название для группы. По умолчанию `null`.
 
+<aside class="notice"><code>ID</code> групп не должны и не могут повторяться.</aside>
+
 ```csharp
-var group = AudioGroupManager.Instance.GetGroup("some_group");
-Debug.Log(group.ID); //Выведет название группы.
+string ID { get; }
 ```
 
 ### GetStream
 
+Поиск ПЕРВОГО вложенного потока по определённому ID. Если такого нет - возвращает `null`.
+
+```csharp
+IAudioStream GetStream(string id);
+```
+
+> Пример использования
+
+```csharp
+var stream = group.GetStream("some_group");
+```
+
 ### GetStreamByClip
+
+Поиск ПЕРВОГО вложенного потока по определённому аудио-клипу (или его названию). Если такого нет - возвращает `null`.
+
+```csharp
+IAudioStream GetStreamByClip(AudioClip clip);
+IAudioStream GetStreamByClip(string clipName);
+```
+
+> Пример использования
+
+```csharp
+var streamByClip = group.GetStreamByClip(audioClip);
+var streamByClipName = group.GetStreamByClip(audioClip.name);
+```
 
 ### GetStreams
 
+Поиск всех вложенных потоков по определённому ID. В случае если их нет - возвращает пустой массив.
+
+```csharp
+IAudioStream[] GetStreams(string id);
+```
+
+> Пример использования
+
+```csharp
+var streams = group.GetStreams("some_group");
+```
+
 ### GetStreamsByClip
 
-### SetID
+Поиск всех вложенных потоков по определённому аудио-клипу (или его названию). В случае если их нет - возвращает пустой массив.
+
+```csharp
+IAudioStream[] GetStreamsByClip(AudioClip clip);
+IAudioStream[] GetStreamsByClip(string clipName);
+```
+
+> Пример использования
+
+```csharp
+var streamsByClip = group.GetStreamsByClip(audioClip);
+var streamsByClipName = group.GetStreamsByClip(audioClip.name);
+```
 
 ## IAudioStream
 
+Класс для управления аудио-потоком.
+
 ### ID
 
+Определённое имя потока. Не уникально и может повторяться.
+
+```csharp
+string ID { get; }
+```
+
 ### Loop
+
+Зацикленность звука.
+
+```csharp
+bool Loop { get; }
+```
 
 ### Clip
 
