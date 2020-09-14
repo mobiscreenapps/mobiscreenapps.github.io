@@ -1,7 +1,7 @@
 ---
 title: App Core API Reference
 
-#language_tabs:
+# language_tabs:
 #  - csharp
 
 toc_footers:
@@ -31,59 +31,54 @@ code_clipboard: true
 Контейнер для потоков звуков. Выполняет роль медиатора для управления паузой/громкостью/мутом, а так же - позволяет найти конкретные вложенные потоки.
 
 ### ID
-```csharp
+<!-- ```csharp
 string ID { get; }
-```
+``` -->
 
 Уникальное название для группы. По умолчанию `null`.
 
 <aside class="notice"><code>ID</code> групп не должны и не могут повторяться.</aside>
 
 ### GetStream
-```csharp
+<!-- ```csharp
 IAudioStream GetStream(string id);
-```
+``` -->
 > Пример использования
-```csharp
+<!-- ```csharp
 var stream = group.GetStream("some_group");
-```
+``` -->
 
 Поиск ПЕРВОГО вложенного потока по определённому ID. Если такого нет - возвращает `null`.
 
 ### GetStreamByClip
-```csharp
-IAudioStream GetStreamByClip(AudioClip clip);
-IAudioStream GetStreamByClip(string clipName);
-```
-> Пример использования
-```csharp
-var streamByClip = group.GetStreamByClip(audioClip);
-var streamByClipName = group.GetStreamByClip(audioClip.name);
-```
+`GetStreamByClip(AudioClip clip)`csharp
+`GetStreamByClip(**AudioClip** clip)` 
+
+`GetStreamByClip(**AudioClip** clip) // Piece of code`
 
 Поиск ПЕРВОГО вложенного потока по определённому аудио-клипу (или его названию). Если такого нет - возвращает `null`.
 
 ### GetStreams
-```csharp
+<!-- ```csharp
 IAudioStream[] GetStreams(string id);
-```
+``` -->
 > Пример использования
-```csharp
+<!-- ```csharp
 var streams = group.GetStreams("some_group");
-```
+``` -->
 
 Поиск всех вложенных потоков по определённому ID. В случае если их нет - возвращает пустой массив.
 
 ### GetStreamsByClip
-```csharp
+<!-- ```csharp
 IAudioStream[] GetStreamsByClip(AudioClip clip);
 IAudioStream[] GetStreamsByClip(string clipName);
-```
+``` -->
 > Пример использования
-```csharp
+<!-- ```csharp
 var streamsByClip = group.GetStreamsByClip(audioClip);
 var streamsByClipName = group.GetStreamsByClip(audioClip.name);
-```
+``` -->
 
 Поиск всех вложенных потоков по определённому аудио-клипу (или его названию). В случае если их нет - возвращает пустой массив.
 
@@ -92,16 +87,16 @@ var streamsByClipName = group.GetStreamsByClip(audioClip.name);
 Класс для управления аудио-потоком.
 
 ### ID
-```csharp
+<!-- ```csharp
 string ID { get; }
-```
+``` -->
 
 Определённое имя потока. Не уникально и может повторяться.
 
 ### Loop
-```csharp
+<!-- ```csharp
 bool Loop { get; }
-```
+``` -->
 
 Зацикленность звука.
 
