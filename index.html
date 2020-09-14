@@ -279,7 +279,7 @@
   color: #859900;
 }
     </style>
-    <link href="stylesheets/screen-41e6bdbf.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/screen-fc003750.css" rel="stylesheet" media="screen" />
     <link href="stylesheets/print-953e3353.css" rel="stylesheet" media="print" />
       <script src="javascripts/all-1361b384.js"></script>
 
@@ -611,62 +611,75 @@
 <aside class="warning"> Устарелый класс. В скором времени будет удалён. Используйте <code>AudioStream</code>'ы вместо него.</aside>
 <h2 id='iaudiogroup'>IAudioGroup</h2>
 <p>Контейнер для потоков звуков. Выполняет роль медиатора для управления паузой/громкостью/мутом, а так же - позволяет найти конкретные вложенные потоки.</p>
-<h3 id='id'>ID</h3><div class="highlight"><pre class="highlight csharp tab-csharp"><code><span class="kt">string</span> <span class="n">ID</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="p">}</span>
-</code></pre></div>
+<h3 id='id'>ID</h3>
+<!-- ```csharp
+string ID { get; }
+``` -->
+
 <p>Уникальное название для группы. По умолчанию <code>null</code>.</p>
 
 <aside class="notice"><code>ID</code> групп не должны и не могут повторяться.</aside>
-<h3 id='getstream'>GetStream</h3><div class="highlight"><pre class="highlight csharp tab-csharp"><code><span class="n">IAudioStream</span> <span class="nf">GetStream</span><span class="p">(</span><span class="kt">string</span> <span class="n">id</span><span class="p">);</span>
-</code></pre></div>
+<h3 id='getstream'>GetStream</h3>
+<!-- ```csharp
+IAudioStream GetStream(string id);
+``` -->
+
 <blockquote>
 <p>Пример использования
-<code>csharp
+&lt;!-- <code>csharp
 var stream = group.GetStream(&quot;some_group&quot;);
-</code></p>
+</code> --&gt;</p>
 </blockquote>
 
 <p>Поиск ПЕРВОГО вложенного потока по определённому ID. Если такого нет - возвращает <code>null</code>.</p>
-<h3 id='getstreambyclip'>GetStreamByClip</h3><div class="highlight"><pre class="highlight csharp tab-csharp"><code><span class="n">IAudioStream</span> <span class="nf">GetStreamByClip</span><span class="p">(</span><span class="n">AudioClip</span> <span class="n">clip</span><span class="p">);</span>
-<span class="n">IAudioStream</span> <span class="nf">GetStreamByClip</span><span class="p">(</span><span class="kt">string</span> <span class="n">clipName</span><span class="p">);</span>
-</code></pre></div>
-<blockquote>
-<p>Пример использования
-<code>csharp
-var streamByClip = group.GetStreamByClip(audioClip);
-var streamByClipName = group.GetStreamByClip(audioClip.name);
-</code></p>
-</blockquote>
+<h3 id='getstreambyclip'>GetStreamByClip</h3>
+<p><code>GetStreamByClip(AudioClip clip)</code>csharp
+<code>GetStreamByClip(**AudioClip** clip)</code> </p>
+
+<p><code>GetStreamByClip(**AudioClip** clip) // Piece of code</code></p>
 
 <p>Поиск ПЕРВОГО вложенного потока по определённому аудио-клипу (или его названию). Если такого нет - возвращает <code>null</code>.</p>
-<h3 id='getstreams'>GetStreams</h3><div class="highlight"><pre class="highlight csharp tab-csharp"><code><span class="n">IAudioStream</span><span class="p">[]</span> <span class="nf">GetStreams</span><span class="p">(</span><span class="kt">string</span> <span class="n">id</span><span class="p">);</span>
-</code></pre></div>
+<h3 id='getstreams'>GetStreams</h3>
+<!-- ```csharp
+IAudioStream[] GetStreams(string id);
+``` -->
+
 <blockquote>
 <p>Пример использования
-<code>csharp
+&lt;!-- <code>csharp
 var streams = group.GetStreams(&quot;some_group&quot;);
-</code></p>
+</code> --&gt;</p>
 </blockquote>
 
 <p>Поиск всех вложенных потоков по определённому ID. В случае если их нет - возвращает пустой массив.</p>
-<h3 id='getstreamsbyclip'>GetStreamsByClip</h3><div class="highlight"><pre class="highlight csharp tab-csharp"><code><span class="n">IAudioStream</span><span class="p">[]</span> <span class="nf">GetStreamsByClip</span><span class="p">(</span><span class="n">AudioClip</span> <span class="n">clip</span><span class="p">);</span>
-<span class="n">IAudioStream</span><span class="p">[]</span> <span class="nf">GetStreamsByClip</span><span class="p">(</span><span class="kt">string</span> <span class="n">clipName</span><span class="p">);</span>
-</code></pre></div>
+<h3 id='getstreamsbyclip'>GetStreamsByClip</h3>
+<!-- ```csharp
+IAudioStream[] GetStreamsByClip(AudioClip clip);
+IAudioStream[] GetStreamsByClip(string clipName);
+``` -->
+
 <blockquote>
 <p>Пример использования
-<code>csharp
+&lt;!-- <code>csharp
 var streamsByClip = group.GetStreamsByClip(audioClip);
 var streamsByClipName = group.GetStreamsByClip(audioClip.name);
-</code></p>
+</code> --&gt;</p>
 </blockquote>
 
 <p>Поиск всех вложенных потоков по определённому аудио-клипу (или его названию). В случае если их нет - возвращает пустой массив.</p>
 <h2 id='iaudiostream'>IAudioStream</h2>
 <p>Класс для управления аудио-потоком.</p>
-<h3 id='id-2'>ID</h3><div class="highlight"><pre class="highlight csharp tab-csharp"><code><span class="kt">string</span> <span class="n">ID</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="p">}</span>
-</code></pre></div>
+<h3 id='id-2'>ID</h3>
+<!-- ```csharp
+string ID { get; }
+``` -->
+
 <p>Определённое имя потока. Не уникально и может повторяться.</p>
-<h3 id='loop'>Loop</h3><div class="highlight"><pre class="highlight csharp tab-csharp"><code><span class="kt">bool</span> <span class="n">Loop</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="p">}</span>
-</code></pre></div>
+<h3 id='loop'>Loop</h3>
+<!-- ```csharp
+bool Loop { get; }
+``` -->
+
 <p>Зацикленность звука.</p>
 <h3 id='clip'>Clip</h3><h3 id='group'>Group</h3><h3 id='overridegroupflags'>OverrideGroupFlags</h3><h3 id='setid'>SetID</h3><h3 id='setoncomplete'>SetOnComplete</h3><h3 id='setoverridegroupflags'>SetOverrideGroupFlags</h3><h3 id='stop'>Stop</h3><h2 id='iaudiogroupmanager'>IAudioGroupManager</h2><h3 id='defaultgroup'>DefaultGroup</h3><h3 id='musicgroup'>MusicGroup</h3><h3 id='getgroup'>GetGroup</h3><h3 id='getstream-2'>GetStream</h3><h3 id='getstreambyclip-2'>GetStreamByClip</h3><h3 id='getstreambyclip-3'>GetStreamByClip</h3><h3 id='getstreams-2'>GetStreams</h3><h3 id='getstreamsbyclip-2'>GetStreamsByClip</h3><h3 id='getstreamsbyclip-3'>GetStreamsByClip</h3><h2 id='iaudiosettingslayer'>IAudioSettingsLayer</h2><h3 id='volume'>Volume</h3><h3 id='mute'>Mute</h3><h3 id='pause'>Pause</h3><h2 id='iaudiostream-2'>IAudioStream</h2><h3 id='id-3'>ID</h3><h3 id='loop-2'>Loop</h3><h3 id='clip-2'>Clip</h3><h3 id='group-2'>Group</h3><h3 id='overridegroupflags-2'>OverrideGroupFlags</h3><h3 id='setgroup'>SetGroup</h3><h3 id='setid-2'>SetID</h3><h3 id='setclip'>SetClip</h3><h3 id='setloop'>SetLoop</h3><h3 id='setvolume'>SetVolume</h3><h3 id='setmute'>SetMute</h3><h3 id='setpause'>SetPause</h3><h3 id='setoncomplete-2'>SetOnComplete</h3><h3 id='setoverridegroupflags-2'>SetOverrideGroupFlags</h3><h3 id='stop-2'>Stop</h3><h2 id='iaudiostreammanager'>IAudioStreamManager</h2><h3 id='getstreambuilder'>GetStreamBuilder</h3><h2 id='audiostream-builder'>AudioStream.Builder</h2><h3 id='builder'>Builder</h3><h3 id='setgroup-2'>SetGroup</h3><h3 id='setid-3'>SetID</h3><h3 id='setclip-2'>SetClip</h3><h3 id='setloop-2'>SetLoop</h3><h3 id='setvolume-2'>SetVolume</h3><h3 id='setmute-2'>SetMute</h3><h3 id='setpause-2'>SetPause</h3><h3 id='setoncomplete-3'>SetOnComplete</h3><h3 id='setoverridegroupflags-3'>SetOverrideGroupFlags</h3><h3 id='dispose'>Dispose</h3><h3 id='play'>Play</h3><h3 id='stop-3'>Stop</h3><h2 id='audiostream'>AudioStream</h2><h3 id='getbuilder'>GetBuilder</h3><h3 id='play-2'>Play</h3><h3 id='createfromsource'>CreateFromSource</h3><h2 id='iaudiovolumemanager'>IAudioVolumeManager</h2><h3 id='overridesettingsflag'>OverrideSettingsFlag</h3><h1 id='extensions'>Extensions</h1><h2 id='colorhelpers'>ColorHelpers</h2><h2 id='cycliclist'>CyclicList</h2><h2 id='dictionaryextensions'>DictionaryExtensions</h2><h2 id='listextensions'>ListExtensions</h2><h2 id='mathextensions'>MathExtensions</h2><h2 id='transformextensions'>TransformExtensions</h2><h2 id='tweenextensions'>TweenExtensions</h2><h2 id='unsortedextensions'>UnsortedExtensions</h2><h1 id='generated'>Generated</h1><h1 id='helpers'>Helpers</h1><h1 id='iap'>IAP</h1><h1 id='initialization'>Initialization</h1><h1 id='input'>Input</h1><h1 id='log'>Log</h1><h1 id='pooling'>Pooling</h1><h1 id='scene-managment'>Scene Managment</h1><h1 id='storage'>Storage</h1><h1 id='taptic'>Taptic</h1><h1 id='time'>Time</h1><h1 id='ui'>UI</h1>
       </div>
