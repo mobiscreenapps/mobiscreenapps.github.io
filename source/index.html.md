@@ -1,261 +1,72 @@
 ---
-title: App Core API Reference
-
-# language_tabs:
-#  - csharp
+title: Mobi Screen Apps
 
 toc_footers:
-  # - <a href='#'>Sign Up for a Developer Key</a>
-  #- <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
-
-# includes:
-#   - audioContainerExtensions
+<a href='mailto:mobiscreenapps@gmail.com'>Contact Us</a>
 
 search: true
 
-code_clipboard: true
+code_clipboard: false
 ---
 
-# Введение
+# Privacy Policy
 
-Документация к [AppCore](https://gitlab.com/msa-developers/appcore). Здесь собрано описание основного функционала инструментария.
+## App 1
 
-# Audio
+It’s good but I need to tell you a secret
+It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
 
-## AudioController
+It’s good but I need to tell you a secret
+It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
 
-<aside class="warning"> Устарелый класс. В скором времени будет удалён. Используйте <code>AudioStream</code>'ы вместо него.</aside>
+It’s good but I need to tell you a secret
+It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
 
-## IAudioGroup
+It’s good but I need to tell you a secret
+It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
 
-Контейнер для потоков звуков. Выполняет роль медиатора для управления паузой/громкостью/мутом, а так же - позволяет найти конкретные вложенные потоки.
+It’s good but I need to tell you a secret
+It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
 
-### ID
-<!-- ```csharp
-string ID { get; }
-``` -->
+It’s good but I need to tell you a secret
+It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
 
-Уникальное название для группы. По умолчанию `null`.
+It’s good but I need to tell you a secret
+It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
 
-<aside class="notice"><code>ID</code> групп не должны и не могут повторяться.</aside>
+It’s good but I need to tell you a secret
+It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
 
-### GetStream
-<!-- ```csharp
-IAudioStream GetStream(string id);
-``` -->
-> Пример использования
-<!-- ```csharp
-var stream = group.GetStream("some_group");
-``` -->
+It’s good but I need to tell you a secret
+It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
 
-Поиск ПЕРВОГО вложенного потока по определённому ID. Если такого нет - возвращает `null`.
+It’s good but I need to tell you a secret
+It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
 
-### GetStreamByClip
-`GetStreamByClip(AudioClip clip)`csharp
-`GetStreamByClip(**AudioClip** clip)` 
+## App 2
 
-`GetStreamByClip(**AudioClip** clip) // Piece of code`
+It’s good but I need to tell you a secret
+It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
 
-Поиск ПЕРВОГО вложенного потока по определённому аудио-клипу (или его названию). Если такого нет - возвращает `null`.
+It’s good but I need to tell you a secret
+It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
 
-### GetStreams
-<!-- ```csharp
-IAudioStream[] GetStreams(string id);
-``` -->
-> Пример использования
-<!-- ```csharp
-var streams = group.GetStreams("some_group");
-``` -->
+It’s good but I need to tell you a secret
+It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
 
-Поиск всех вложенных потоков по определённому ID. В случае если их нет - возвращает пустой массив.
+## App 3
 
-### GetStreamsByClip
-<!-- ```csharp
-IAudioStream[] GetStreamsByClip(AudioClip clip);
-IAudioStream[] GetStreamsByClip(string clipName);
-``` -->
-> Пример использования
-<!-- ```csharp
-var streamsByClip = group.GetStreamsByClip(audioClip);
-var streamsByClipName = group.GetStreamsByClip(audioClip.name);
-``` -->
+It’s good but I need to tell you a secret
+It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
 
-Поиск всех вложенных потоков по определённому аудио-клипу (или его названию). В случае если их нет - возвращает пустой массив.
+It’s good but I need to tell you a secret
+It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
 
-## IAudioStream
+It’s good but I need to tell you a secret
+It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
 
-Класс для управления аудио-потоком.
+# Support
 
-### ID
-<!-- ```csharp
-string ID { get; }
-``` -->
+In case of any issues you can inform our team via e-mail [sos.mobiscreenapps@gmail.com](mailto:sos.mobiscreenapps@gmail.com)
 
-Определённое имя потока. Не уникально и может повторяться.
-
-### Loop
-<!-- ```csharp
-bool Loop { get; }
-``` -->
-
-Зацикленность звука.
-
-### Clip
-
-### Group
-
-### OverrideGroupFlags
-
-### SetID
-
-### SetOnComplete
-
-### SetOverrideGroupFlags
-
-### Stop
-
-## IAudioGroupManager
-
-### DefaultGroup
-
-### MusicGroup
-
-### GetGroup
-
-### GetStream
-
-### GetStreamByClip
-
-### GetStreamByClip
-
-### GetStreams
-
-### GetStreamsByClip
-
-### GetStreamsByClip
-
-## IAudioSettingsLayer
-
-### Volume
-
-### Mute
-
-### Pause
-
-## IAudioStream
-
-### ID
-
-### Loop
-
-### Clip
-
-### Group
-
-### OverrideGroupFlags
-
-### SetGroup
-
-### SetID
-
-### SetClip
-
-### SetLoop
-
-### SetVolume
-
-### SetMute
-
-### SetPause
-
-### SetOnComplete
-
-### SetOverrideGroupFlags
-
-### Stop
-
-## IAudioStreamManager
-
-### GetStreamBuilder
-
-## AudioStream.Builder
-
-### Builder
-
-### SetGroup
-
-### SetID
-
-### SetClip
-
-### SetLoop
-
-### SetVolume
-
-### SetMute
-
-### SetPause
-
-### SetOnComplete
-
-### SetOverrideGroupFlags
-
-### Dispose
-
-### Play
-
-### Stop
-
-## AudioStream
-
-### GetBuilder
-
-### Play
-
-### CreateFromSource
-
-## IAudioVolumeManager
-
-### OverrideSettingsFlag
-
-# Extensions
-
-## ColorHelpers
-
-## CyclicList
-
-## DictionaryExtensions
-
-## ListExtensions
-
-## MathExtensions
-
-## TransformExtensions
-
-## TweenExtensions
-
-## UnsortedExtensions
-
-# Generated
-
-# Helpers
-
-# IAP
-
-# Initialization
-
-# Input
-
-# Log
-
-# Pooling
-
-# Scene Managment
-
-# Storage
-
-# Taptic
-
-# Time
-
-# UI
+Feel free to contact us
