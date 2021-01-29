@@ -11,62 +11,127 @@ code_clipboard: false
 
 # Privacy Policy
 
-## App 1
+Mobi Screen Apps respects the privacy of our users ("user" or "you").
 
-It’s good but I need to tell you a secret
-It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
+This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
+If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.
+The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Stick Boy unless otherwise defined in this Privacy Policy.
 
-It’s good but I need to tell you a secret
-It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
+## Information Collection and Use
 
-It’s good but I need to tell you a secret
-It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
+For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to Device ID, User ID. The information that we request will be retained by us and used as described in this privacy policy.
+The app does use third party services that may collect information used to identify you.
 
-It’s good but I need to tell you a secret
-It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
+Links to privacy policies of third party service providers used by the app:
+* **[Google Play Services](https://policies.google.com/privacy)**
+* **[AdMob](https://support.google.com/admob/answer/6128543?hl=en)**
+* **[Google Analytics for Firebase](https://firebase.google.com/policies/analytics)**
+* **[Firebase Crashlytics](https://firebase.google.com/support/privacy/)**
+* **[Facebook](https://www.facebook.com/about/privacy/update/printable)**
+* **[Fabric](https://policies.google.com/privacy)**
+* **[Matomo](https://matomo.org/privacy-policy/)**
+* **[Clicky](https://clicky.com/terms#privacy)**
+* **[Flurry Analytics](https://privacy.oath.com/)**
+* **[Appodeal](https://www.appodeal.com/home/privacy-policy/)**
+* **[Fathom Analytics](https://usefathom.com/privacy/)**
+* **[Unity](https://unity3d.com/legal/privacy-policy)**
+* **[SDKBOX](https://www.sdkbox.com/privacy)**
+* **[GameAnalytics](https://gameanalytics.com/privacy)**
+* **[One Signal](https://onesignal.com/privacy_policy)**
+* **[Expo](https://expo.io/privacy)**
+* **[Sentry](https://sentry.io/privacy/)**
+* **[AppLovin](https://www.applovin.com/privacy/)**
+* **[Vungle](https://vungle.com/privacy/)**
+* **[StartApp](https://www.startapp.com/privacy/)**
+* **[AdColony](https://www.adcolony.com/privacy-policy/)**
+* **[Amplitude](https://amplitude.com/privacy)**
+* **[Adjust](https://www.adjust.com/terms/privacy-policy)**
+* **[Mapbox](https://www.mapbox.com/legal/privacy)**
+* **[Godot](https://godotengine.org/privacy-policy)**
 
-It’s good but I need to tell you a secret
-It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
+## Log Data
 
-It’s good but I need to tell you a secret
-It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
+We want to inform you that whenever you use our Service, in a case of an error in the app we collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.
 
-It’s good but I need to tell you a secret
-It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
+## Cookies
 
-It’s good but I need to tell you a secret
-It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
+Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.
+This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.
 
-It’s good but I need to tell you a secret
-It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
+## Service Providers
 
-It’s good but I need to tell you a secret
-It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
+We may employ third-party companies and individuals due to the following reasons:
 
-## App 2
+To facilitate our Service;
+To provide the Service on our behalf;
+To perform Service-related services; or
+To assist us in analyzing how our Service is used.
 
-It’s good but I need to tell you a secret
-It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
+We want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
 
-It’s good but I need to tell you a secret
-It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
+## Security
 
-It’s good but I need to tell you a secret
-It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
+We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.
 
-## App 3
+## Links to Other Sites
 
-It’s good but I need to tell you a secret
-It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
+This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
 
-It’s good but I need to tell you a secret
-It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
+## Children’s Privacy
 
-It’s good but I need to tell you a secret
-It’s good but it’s like fruit in the commercial it was way different so you could buy this you could get this I wouldn’t really that much but you can get it it’s pretty cool there’s a pretty cool game the people who made it I guess I because it just depends on the people who make it and yeah so I guess they’re pretty good but you could download this I wouldn’t I just deleted this yeah it’s kind of like a glitch bad like it’s not good or not that so yeah do you wanna download this game downloaded I don’t care
+These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.
+
+## Changes to This Privacy Policy
+
+We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page.
+
+## Contact Us
+
+If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at **[sos.mobiscreenapps@gmail.com](mailto:mobiscreenapps@gmail.com)**.
 
 # Support
 
-In case of any issues you can inform our team via e-mail [sos.mobiscreenapps@gmail.com](mailto:sos.mobiscreenapps@gmail.com)
+In case of any issues you can inform our team via e-mail **[sos.mobiscreenapps@gmail.com](mailto:sos.mobiscreenapps@gmail.com)**
 
 Feel free to contact us
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
