@@ -23,6 +23,7 @@ For a better experience, while using our Service, we may require you to provide 
 The app does use third party services that may collect information used to identify you.
 
 Links to privacy policies of third party service providers used by the app:
+
 * **[Google Play Services](https://policies.google.com/privacy)**
 * **[AdMob](https://support.google.com/admob/answer/6128543?hl=en)**
 * **[Google Analytics for Firebase](https://firebase.google.com/policies/analytics)**
@@ -87,7 +88,7 @@ We may update our Privacy Policy from time to time. Thus, you are advised to rev
 
 ## Contact Us
 
-If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at **[sos.mobiscreenapps@gmail.com](mailto:mobiscreenapps@gmail.com)**.
+If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at **[mobiscreenapps@gmail.com](mailto:mobiscreenapps@gmail.com)**.
 
 # Support
 
