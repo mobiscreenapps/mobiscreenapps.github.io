@@ -632,3 +632,10 @@ mintegral.com, 21506, DIRECT
 fyber.com, 211953, DIRECT
 adcolony.com, 2851dffbb0d51b5e, RESELLER, 1ad675c9de6b5176
 facebook.com, 133481887983416, DIRECT, c3e20eee3f780d68
+_________28__________
+_________04__________
+________2022_________
+facebook.com, 162137548103752, RESELLER, c3e20eee3f780d68
+facebook.com, 1406147566516853, RESELLER, c3e20eee3f780d68
+facebook.com, 267015745554705, RESELLER, c3e20eee3f780d68
+facebook.com, 518291889704122, RESELLER, c3e20eee3f780d68
